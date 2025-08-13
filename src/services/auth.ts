@@ -16,7 +16,7 @@ const SCOPES = [
 export const getAuthUrl = (): string => {
   const params = new URLSearchParams({
     client_id: CLIENT_ID,
-    response_type: 'code',
+    response_type: 'token',
     redirect_uri: REDIRECT_URI,
     scope: SCOPES,
     show_dialog: 'true',
